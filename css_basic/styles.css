@@ -1,25 +1,54 @@
-/* Flexbox layout structure */
+/* === Custom Styling === */
+
+/* Logo style already exists in base.css (header li.logo) */
 
 body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    background-color: #f0f4f8;
 }
 
-main {
-    display: flex;
-    flex-direction: row;
-    flex: auto;
+/* Style the navigation links */
+header a {
+    color: #1a1a1a;
+    font-weight: bold;
 }
 
-/* Article and Aside layout */
+header li.logo {
+    font-size: 36px;
+    margin-right: 20px;
+}
 
+/* Add hover effect to nav links */
+header a:hover {
+    color: #F80002;
+    text-decoration: underline;
+}
+
+/* Article content */
 article {
-    flex: 2;
-    overflow-y: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    padding: 30px;
 }
 
-aside {
-    flex: 1;
-    overflow-y: auto;
+/* Improve image display */
+article img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
 }
+
+/* Footer */
+footer {
+    background-color: #ddd;
+    text-align: center;
+    font-style: italic;
+    border-top: 1px solid #bbb;
+}
+
+/* Aside styling */
+aside {
+    background-color: #f9f9f9;
+    border-left: 3px solid #ccc;
+}
+
